@@ -1,15 +1,16 @@
 services:
-  php-apache:
-    build: .
+
+  php:
+    image: php:apache
+    container_name: phpApache
     ports:
       - "8080:80"
     volumes:
       - .:/var/www/html
-    depends_on:
-      - mysql
 
   mysql:
     image: mysql
+    container_name: MySQL
     volumes:
       - mysql_data:/var/lib/mysql
     ports:
@@ -18,7 +19,7 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin
     ports:
       - "8081:80"
     environment:
