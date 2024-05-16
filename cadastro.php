@@ -21,15 +21,15 @@
             <div class="row">
                 <div class="col-12">
                     Usuário:
-                    <input type="text" name="usuario" placeholder="Seu nome de usuário" class="form-control usuario">
+                    <input type="text" name="usuario" placeholder="Seu nome de usuário" class="form-control usuario" autocomplete="off">
                 </div>
                 <div class="col-12">
                     Senha:
-                    <input type="password" name="senha" placeholder="Sua senha" class="form-control senha">
+                    <input type="password" name="senha" placeholder="Sua senha" class="form-control senha" autocomplete="off">
                 </div>
                 <div class="col-12">
                     Confirmar senha:
-                    <input type="password" name="confirmarSenha" placeholder="Confirme sua senha" class="form-control confirmarSenha">
+                    <input type="password" name="confirmarSenha" placeholder="Confirme sua senha" class="form-control confirmarSenha" autocomplete="off">
                 </div>
                 <div class="col-12">
                     <input type="submit" class="form-control btn btn-success mt-3" value="REALIZAR CADASTRO">

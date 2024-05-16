@@ -1,7 +1,7 @@
 services:
 
   phpApache:
-    image: php:apache
+    image: php-mysqli-ativo
     ports:
       - "8080:80"
     volumes:

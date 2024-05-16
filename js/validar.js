@@ -15,7 +15,7 @@ function verificarCadastro() {
                             alert('Usuário já cadastrado!');
                         } else {
                             alert("Cadastro realizado com sucesso!");
-                            window.location = "../login-api";
+                            window.location = "../";
                         }
                     }
                 });
