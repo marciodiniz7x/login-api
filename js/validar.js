@@ -29,6 +29,3 @@ function verificarCadastro() {
         alert('Usuário vazio');
     }
 }
-
-
-console.log()
