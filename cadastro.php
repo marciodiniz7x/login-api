@@ -36,6 +36,8 @@
                 </div>
             </div>
         </form>
+        <br>
+        <a href="/">Voltar</a>
     </div>
 
     <!-- Optional JavaScript -->
@@ -45,38 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script>
-        function verificarCadastro() {
-            
-            var usuario = $(".usuario").val();
-            var senha = $('.senha').val();
-            var confirmarSenha = $('.confirmarSenha').val();
-
-            if (usuario != "") {
-                if (senha != confirmarSenha) {
-                    alert('Senhas incorretas');
-                } else if (senha === "") {
-                    alert('Senha vazia');
-                } else {
-                    $.ajax({
-                        type: "POST",
-                        url: "script/pesquisa-cadastro.php",
-                        data: $("#formCadastro").serialize(),
-                        success: function(resultado) {
-                            alert(resultado);
-                            return false;
-                        }
-                    });
-                    return false;
-
-                }
-            } else {
-                return false;
-            }
-
-        }
-        
-    </script>
+    <script src="./js/validar.js"></script>
 </body>
 
 </html>
