@@ -7,21 +7,22 @@
     $conexao = mysqli_connect($servidor, $usuarioDB, $senhaDB, $banco);
 
     $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];  
-    
-    echo $usuario . " + 123456";
+    $senha = sha1($_POST['senha']);  
 
     $pesquisaUsuario = mysqli_num_rows(mysqli_query($conexao, "
-        SELECT usuario FROM usuario
+        SELECT id FROM usuario
         WHERE usuario = '$usuario'
     "));
 
     if($pesquisaUsuario > 0) { // Usuário já cadastrado
-        echo 0;
+        echo '0';
     } else { // Realiza cadastro
-        echo 1;
-    }
 
-    // mysqli_query($conexao, "INSERT INTO usuario VALUES (NULL, 'marcio7x', 'teste123')");
+        mysqli_query($conexao, "
+            INSERT INTO usuario VALUES
+            (NULL, '$usuario', '$senha')
+        ");
+        echo '1';
+    };
 
 ?>

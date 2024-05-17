@@ -37,7 +37,7 @@
             </div>
         </form>
         <br>
-        <a href="/">Voltar</a>
+        <a href="/">Voltar à página de login</a>
     </div>
 
     <!-- Optional JavaScript -->
