@@ -37,7 +37,6 @@ function verificarCadastro(event) {
                 window.location.href = "../"; // Cadastra e redireciona para a página de login
             }
         },
-       
     });
 }
 
