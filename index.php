@@ -29,7 +29,7 @@ ob_start();
                     exit();
                 } Else {
                     // Falha no login
-                    echo "Dados inválidos";
+                    $loginError = '<div class="invalid">Dados inválidos</div>';
                 }
 
             }

@@ -65,3 +65,30 @@ body {
 .form-area form .submit:hover {
     background-color: #424242;
 }
+
+.login-ok {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-ok a {
+    background-color: orangered;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.login-ok a:hover {
+    background-color: #424242;
+}
+
+.invalid {
+    color: orangered;
+    position: absolute;
+    margin-left: 2.4rem;
+    margin-top: 4.4rem;
+    font-style: italic;
+}

@@ -5,4 +5,9 @@
         <input type="password" name="senha" placeholder="Senha" required autocomplete="off">
         <input type="submit" name="acao" value="Enviar" class="submit">
     </form>
+    <?php 
+        if(isset($loginError)) {
+            echo $loginError;
+        }
+    ?>
 </div>
